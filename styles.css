@@ -245,17 +245,16 @@ main {
 
 
 .currency-table--date {
-    width: 190px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 15px;
-    padding: 8px;
+    width: 200px;
+    margin: 15px auto 0;
+    padding: 8px 16px;   /* compacto de verdad */
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
 
 .currency-table--date p {
+    margin: 0;          /* esto evita que el <p> empuje hacia abajo */
     font-size: 1.2rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem; /* evita que la línea sea alta */
     color: var(--warm-blackblack);
 }
